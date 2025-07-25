@@ -67,6 +67,6 @@ bar3 = bar3 + annotation3
 # Stack charts
 chart = alt.vconcat(bar1, bar2, bar3).resolve_scale(y='shared')
 st.title('Antibiotics behave differently depending on whether bacteria are Gram-positive or Gram-negative.')
-st.subheader('Penicillin dominates Gram-positive infections, but Streptomycin is the more universal option.')
+st.subheader('Penicillin dominates Gram-positive infections, but Neomycin is the more universal option.')
 st.write("This app visualizes the Minimum Inhibitory Concentration (MIC) of various bacteria against different antibiotics. It is important to note that the lower MIC the more effective the antibiotic is. The data is sourced from Burtin.")
 st.altair_chart(chart, use_container_width=True)
